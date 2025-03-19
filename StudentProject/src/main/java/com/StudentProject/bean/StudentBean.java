@@ -40,6 +40,14 @@ public class StudentBean {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	public String getTech() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String getCollege() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 
