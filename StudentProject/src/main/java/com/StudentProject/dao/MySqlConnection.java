@@ -1,4 +1,4 @@
-package com.akhil.StudentProject;
+package com.StudentProject.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
