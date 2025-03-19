@@ -16,6 +16,30 @@ public class StudentBean {
 	public void setMobileno(String mobileno) {
 		Mobileno = mobileno;
 	}
+	public String getAddress() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void setAddress(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setEmail(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setTech(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setCollege(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public String getEmail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

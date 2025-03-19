@@ -2,18 +2,19 @@ package com.StudentProject.controller;
 
 import java.io.IOException;
 
-import Bean.Student;
-import Dao.registrationdao;
-import jakarta.servlet.RequestDispatcher;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.StudentProject.bean.StudentBean;
+import com.StudentProject.dao.StudentDao;
 
 /**
- * Servlet implementation class registrationservlet
+ * Servlet implementation class Registrationservlet
  */
 @WebServlet("/registrationservlet")
 public class Registrationservlet extends HttpServlet {
@@ -44,7 +45,7 @@ public class Registrationservlet extends HttpServlet {
 		@SuppressWarnings("unused")
 		String College = request.getParameter("College");
 
-		Student s = new Student(); //As we need to use across the project creating the
+		StudentBean s = new StudentBean(); //As we need to use across the project creating the
 
 		s.setName("Name");
 		s.setMobileno("Mobileno");
@@ -54,8 +55,8 @@ public class Registrationservlet extends HttpServlet {
 		s.setCollege("College");
 		
 		@SuppressWarnings("unused")
-		registrationdao rd = new registrationdao();
-		int result = registrationdao.Insertsata(s); //we will have value for result
+		StudentDao rd = new StudentDao();
+		int result = StudentDao.Insertdata(s); //we will have value for result
 		HttpSession session = request.getSession(); // keeping the session open
 		(session).setAttribute("StudentObject",s);
 		
