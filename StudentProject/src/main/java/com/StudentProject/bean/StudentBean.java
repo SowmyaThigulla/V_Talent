@@ -4,6 +4,10 @@ public class StudentBean {
 	
 	private String Name;
 	private String Mobileno;
+	private String Address;
+	private String Email;
+	private String Tech;
+	private String College;
 	public String getName() {
 		return Name;
 	}
@@ -17,38 +21,27 @@ public class StudentBean {
 		Mobileno = mobileno;
 	}
 	public String getAddress() {
-		// TODO Auto-generated method stub
-		return null;
+		return Address;
 	}
-	public void setAddress(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setEmail(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setTech(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setCollege(String string) {
-		// TODO Auto-generated method stub
-		
+	public void setAddress(String address) {
+		Address = address;
 	}
 	public String getEmail() {
-		// TODO Auto-generated method stub
-		return null;
+		return Email;
+	}
+	public void setEmail(String email) {
+		Email = email;
 	}
 	public String getTech() {
-		// TODO Auto-generated method stub
-		return null;
+		return Tech;
+	}
+	public void setTech(String tech) {
+		Tech = tech;
 	}
 	public String getCollege() {
-		// TODO Auto-generated method stub
-		return null;
+		return College;
 	}
-	
-	
-
+	public void setCollege(String college) {
+		College = college;
+	}
 }
