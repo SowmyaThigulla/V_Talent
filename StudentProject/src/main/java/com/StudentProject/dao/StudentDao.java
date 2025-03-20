@@ -19,7 +19,6 @@ public class StudentDao {
 		String query = "insert into student values (?,?,?,?,?,?)";
 		
 		
-		
 		try {
 			ps = con.prepareStatement(query);
 			ps.setString(1, ss.getName());
