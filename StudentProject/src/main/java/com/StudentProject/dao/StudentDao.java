@@ -17,7 +17,9 @@ public class StudentDao {
 		int result = 0;
 		
 		String query = "insert into student values (?,?,?,?,?,?)";
-				
+		
+		
+		
 		try {
 			ps = con.prepareStatement(query);
 			ps.setString(1, ss.getName());
@@ -27,21 +29,12 @@ public class StudentDao {
 			ps.setString(5, ss.getTech());
 			ps.setString(6, ss.getCollege());
 			
-			result = ps.executeUpdate();
-			
-			
-			
-			
-			
-			
+			result = ps.executeUpdate();	
 			
 		} catch (Exception e) {
 			
 			e.printStackTrace();
-		}
-
-		
-		
+		}	
 		return result;
 	}
 	
