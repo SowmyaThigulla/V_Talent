@@ -82,5 +82,7 @@ public class Registrationservlet extends HttpServlet {
 		
 		doGet(request, response);
 	}
+	
+	
 
 }
